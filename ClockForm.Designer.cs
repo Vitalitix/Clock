@@ -28,6 +28,7 @@
 			this.lblTime = new System.Windows.Forms.Label();
 			this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
 			this.bnClose = new System.Windows.Forms.Button();
+			this.Timer1 = new System.Windows.Forms.Timer(this.components);
 			this.SuspendLayout();
 			// 
 			// lblTime
@@ -41,16 +42,16 @@
 			this.lblTime.Size = new System.Drawing.Size(445, 106);
 			this.lblTime.TabIndex = 0;
 			this.lblTime.Text = "12:12:12";
-			this.lblTime.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTime_MouseDown);
-			this.lblTime.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTime_MouseMove);
-			this.lblTime.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblTime_MouseUp);
+			this.lblTime.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LblTime_MouseDown);
+			this.lblTime.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LblTime_MouseMove);
+			this.lblTime.MouseUp += new System.Windows.Forms.MouseEventHandler(this.LblTime_MouseUp);
 			// 
 			// notifyIcon1
 			// 
 			this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
 			this.notifyIcon1.Text = "Clock";
 			this.notifyIcon1.Visible = true;
-			this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
+			this.notifyIcon1.Click += new System.EventHandler(this.NotifyIcon1_Click);
 			// 
 			// bnClose
 			// 
@@ -64,7 +65,7 @@
 			this.bnClose.TabStop = false;
 			this.bnClose.Text = "-";
 			this.bnClose.UseVisualStyleBackColor = false;
-			this.bnClose.Click += new System.EventHandler(this.bnClose_Click);
+			this.bnClose.Click += new System.EventHandler(this.BnClose_Click);
 			// 
 			// ClockForm
 			// 
@@ -96,6 +97,7 @@
 		private System.Windows.Forms.Label lblTime;
 		private System.Windows.Forms.NotifyIcon notifyIcon1;
 		private System.Windows.Forms.Button bnClose;
+		private System.Windows.Forms.Timer Timer1;
 	}
 }
 
